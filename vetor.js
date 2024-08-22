@@ -10,3 +10,8 @@ console.log("O nome da posição 2 é: " + nomes[2]);
 console.log("O nome da posição 3 é: " + nomes[3]);
 console.log("O nome da posição 4 é: " + nomes[4]);
 console.log("O nome da posição 5 é: " + nomes[5]);
+
+//Acessando posições com o For
+for(i=1; i <= 5; i++) {
+    console.log("O nome da posição " + i + " é: " + nomes[i])
+}
