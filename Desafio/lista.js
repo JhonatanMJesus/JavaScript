@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Criar checkbox
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
+        checkbox.classList.add('form-check-input')
         checkbox.checked = completed;
         checkbox.addEventListener('change', () => {
             listItem.classList.toggle('completed', checkbox.checked);
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         // Botão para editar
         const editButton = document.createElement('button');
+        editButton.classList.add('btn', 'btn-warning', 'me-2');
         editButton.textContent = 'Editar';
         editButton.addEventListener('click', (event) => {
             event.stopPropagation();
@@ -53,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         // Botão para excluir
         const deleteButton = document.createElement('button');
+        deleteButton.classList.add('btn', 'btn-danger');
         deleteButton.textContent = 'Excluir';
         deleteButton.addEventListener('click', (event) => {
             event.stopPropagation();
